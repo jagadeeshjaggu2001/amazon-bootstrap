@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKMYSHOW</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container-fluid  bg-dark text-light">
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <img src="https://logodix.com/logo/2011021.png" alt="" style="width: 10rem;">
+                <input type="text" placeholder="search for movies,Events,plays,sports and Activities"
+                    style="width: 60%;">
+            </div>
+
+
+            <div class="d-flex justify-content-end gap-5 ">
+
+                <div class="dropdown">
+                    <button class="btn text-light dropdown-toggle" data-bs-toggle="dropdown">
+                        location
+                    </button>
+                    <div class="dropdown-menu">
+                        <input type="text" placeholder="search your city" style="width: 80%;">
+                        <p class="h6 text-center">popular cities</p>
+                        <ul class="container d-flex">
+                            <li class="dropdown-item">
+                                <img src="https://in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="">
+                                <p>Mumbai</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ncr.png" alt="">
+                                <p>Delhi</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="https://in.bmscdn.com/m6/images/common-modules/regions/bang.png" alt="">
+                                <p>Bengaluru</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="https://in.bmscdn.com/m6/images/common-modules/regions/hyd.png" alt="">
+                                <p>Hyderbad</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="https://in.bmscdn.com/m6/images/common-modules/regions/ahd.png" alt="">
+                                <p>Ahmedabad</p>
+                            </li>
+                            <li class="dropdown-item">
+                                <img src="https://in.bmscdn.com/m6/images/common-modules/regions/chd.png" alt="">
+                                <p>Chandigarh</p>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+                
+               <div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mod">Sign in</button>
+               </div>
+               <div class="modal text-dark" id="mod">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-tittle text-dark">Get started</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="border d-flex justify-content-evenly align-items-center p-2">
+                                <p><ion-icon name="logo-google"></ion-icon></p>
+                                <p>Continue With Goggle</p>
+
+                            </div>
+
+                            <div class="border d-flex justify-content-evenly align-items-center p-2">
+                                <p><ion-icon name="mail-outline"></ion-icon></p>
+                                <p>Continue With Mail</p>
+
+                            </div>
+                            <div class="border d-flex justify-content-evenly align-items-center p-2">
+                                <p><ion-icon name="logo-apple"></ion-icon></p>
+                                <p>Continue With Apple</p>
+                            </div>
+                            <p class="text-center">Or</p>
+
+                            <div class="d-flex justify-content-center">
+                                <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="" style="width: 1rem;">+91</p>
+                                <p class="border-bottom">Continue With Mobile Number</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               </div>
+               <div class="container-fluid mt-3">
+                
+                <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <ion-icon name="list-outline"></ion-icon>
+                </button>
+              </div>
+               <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-tittle text-dark container-fluid">
+                        <h1 class="bg-dark text-light">Hey!</h1>
+                    </div>
+                </div>
+               </div>
+            
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-dark text-light">
+        <div class="navbar nav d-flex justify-content-around" style="width: 100%;">
+            <div class="d-flex gap-4">
+                <p>Movies</p>
+                <p>Stream</p>
+                <p>Events</p>
+                <p>Plays</p>
+                <p>Sports</p>
+                <p>Activities</p>
+                <p>Buzz</p>
+            </div>
+            <div class="d-flex gap-4">
+                <p>List your show</p>
+                <p>Corporates</p>
+                <p>Offers</p>
+                <p>Gift card</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="amzn" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1663675507145_theweb.jpg" alt=""
+                        style="width: 100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1661169352775_fb.jpg" alt=""
+                        style="width: 100%;">
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#amzn" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#amzn" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+        <h3>Recommended Movies</h3>
+
+        <div class="d-flex flex-wrap gap-3">
+            <div>
+                <img style="width: 15rem;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-OTIlICAyOWsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00322816-nyqvzhqjdz-portrait.jpg"
+                    alt="">
+                <h4>Oke Oka Jeevitham</h4>
+                <p class="text-secondary">Drama/Sci-Fi/Thriller</p>
+            </div>
+            <div>
+                <img style="width: 15rem;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzglICAxOTBrIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00063710-eeytyxnmga-portrait.jpg"
+                    alt="">
+                <h4>Brahmastra</h4>
+                <p class="text-secondary">Action/Advanture/Fantasy</p>
+            </div>
+            <div>
+                <img style="width: 15rem;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NjQlICA1ayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338097-uebpnqxcuk-portrait.jpg"
+                    alt="">
+                <h4>Nenu Meeku Bagab <br> Kavalsinavaadini</h4>
+                <p class="text-secondary">Action/Romantic</p>
+            </div>
+            <div>
+                <img style="width: 15rem;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-NzMlICA0ayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00322813-uxzhpfmerg-portrait.jpg"
+                    alt="">
+                <h4>Aa Ammayi Gurinchi <br> Meeku Chepali</h4>
+                <p class="text-secondary">Comedy/Drama/Romantic</p>
+            </div>
+            <div>
+                <img style="width: 15rem;"
+                    src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@heart_202006300400.png,ox-24,oy-617,ow-29:ote-ODglICAyayB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00339822-skagkatqrw-portrait.jpg"
+                    alt="">
+                <h4>Life of Muthu</h4>
+                <p class="text-secondary">Action/Crime/Drama</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+        <div>
+            <a href="">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/lead-in-v3-collection-202102040828.png"
+                    alt="" style="width: 100%;">
+            </a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h3>The Best Of Entertainment</h3>
+
+        <div class="d-flex gap-5 flex-wrap">
+
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTE1KyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/workshops-collection-202007231330.png"
+                    alt="" class="rounded" style="width: 13rem;">
+            </div>
+            <div>
+
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/fitness-collection-2020081150.png"
+                    alt="" class="rounded" style="width: 13rem;">
+            </div>
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/kids-collection-202007220710.png"
+                    alt="" class="rounded" style="width: 13rem;">
+            </div>
+            <div>
+
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/comedy-shows-collection-202007220710.png"
+                    alt="" class="rounded" style="width: 13rem;">
+            </div>
+            <div>
+
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300:q-80/music-shows-collection-202007220710.png"
+                    alt="" class="rounded" style="width: 13rem;">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-dark mt-5 text-light">
+        <div class="container p-3">
+
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png"
+                alt="" style="width: 100%;">
+
+
+
+
+            <h2>Premieres</h2>
+            <p>Brand new releases Every Friday</p>
+
+            <div class="d-flex flex-wrap gap-4">
+                <div>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00076943-tfcjhqgdmm-portrait.jpg"
+                        alt="" class="rounded" style="width: 13rem;">
+                    <h4>Top Gun: Maverick</h4>
+                    <p>English</p>
+                </div>
+
+                <div>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00318402-hjavgjqelm-portrait.jpg"
+                        alt="" class="rounded" style="width: 13rem;">
+                    <h5>DC League of Super-Pets</h5>
+                    <p>English</p>
+                </div>
+                <div>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00331520-kykyqmhcaf-portrait.jpg"
+                        alt="" class="rounded" style="width: 13rem;">
+                    <h4>The Black Phone</h4>
+                    <p>English</p>
+                </div>
+                <div>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00327391-tpnrdfmywz-portrait.jpg"
+                        alt="" class="rounded" style="width: 13rem;">
+                    <h4>Sky Sharks</h4>
+                    <p>English</p>
+                </div>
+                <div>
+                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00112828-kxuczrmlns-portrait.jpg"
+                        alt="" class="rounded" style="width: 13rem;">
+                    <h4>Jurrasic World: Dominion</h4>
+                    <p>English</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5">
+
+        <h3>Events Happening Near You</h3>
+
+        <div id="event" class="carousel slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active  w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item   w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#event" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-pill"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#event" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-pill"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container mt-5">
+
+        <h3>Events Happening Near You</h3>
+
+        <div id="event" class="carousel slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active  w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item   w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#event" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-pill"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#event" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-pill"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container mt-5">
+
+        <h3>Events Happening Near You</h3>
+
+        <div id="event" class="carousel slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active  w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item   w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#event" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-pill"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#event" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-pill"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5">
+
+        <h2>Trending Searches Right Now</h2>
+
+        <div class="d-flex flex-wrap gap-5">
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Avatar(3D)</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Chenna Kesava Reddy</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Chup</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Happy Birthday (Telugu)</h6>
+                <p>Movies</p>
+            </button><button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Sita Ramam</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Brahmastra</h6>
+                <p>Movies</p>
+            </button>
+        </div>
+
+        <div class="d-flex flex-wrap gap-5 mt-3">
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">3 (2012)</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Ponniyin Selvan - Part 1</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Karthikeya 2</h6>
+                <p>Movies</p>
+            </button>
+            <button type="button" class="btn btn-secondary">
+                <h6 class="text-danger">Godfather</h6>
+                <p>Movies</p>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5">
+
+        <h3>Events Happening Near You</h3>
+
+        <div id="event" class="carousel slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active  w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item   w-100">
+                    <div class="d-flex gap-3">
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340301-muhvzdtabh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNyBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336526-tsnqsgapgh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00327257-klemaazdun-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNSBPY3Qgb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-cquftglkqh-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                        <div style="width: 15rem;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyOCBPY3Q%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337201-gbawmfvqep-portrait.jpg"
+                                alt="" class="rounded" style="width: 15rem;">
+                            <h5>Love & Peace - ft.Rajasekhar Mamidanna</h5>
+                            <p class="text-secondary">Venue To Be Announced: Vizag 0.00kms away</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#event" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-pill"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#event" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-pill"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid mt-5 bg-dark text-light">
+
+        <div class="d-flex justify-content-around">
+
+            <div class="d-flex gap-3">
+                <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt="">
+                <h5>List Your Show</h5>
+                <p>Got a Show,event,activity or a great experience? partner with us & get list on bookmyshow</p>
+            </div>
+
+            <button type="button" class="btn btn-danger">Contact today!</button>
+
+        </div>
+
+        <div class="d-flex justify-content-around text-center">
+            <div>
+                <h1>
+                    <ion-icon name="person-outline"></ion-icon>
+                </h1>
+                <p>24/7 Customer care</p>
+            </div>
+
+            <div>
+                <h1>
+                    <ion-icon name="refresh-outline"></ion-icon>
+                </h1>
+                <p>Resend Booking Conformation</p>
+            </div>
+            <div>
+                <h1>
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                </h1>
+                <p>Subscribe To The Newsletter</p>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h6>MOVIES NOW SHOWING IN VIZAG</h6>
+            <p class="text-secondary">Oke Oka Jeevitham | Brahmastra | Alluri | Life of Muthu</p>
+
+            <h6>UPCOMING MOVIES IN VIZAG</h6>
+            <p class="text-secondary"> paga Paga Paga | Matti pahachan | Ikshu | Bali | Peepal Tree | Semkhor | Insecure
+            </p>
+
+            <h6>MOVIES BY GENRE</h6>
+            <p class="text-secondary">Drama movies | Action Movies | Thriller Movies | Romantic Movies | Comedy Movies |
+                Crime Movies | Mestery Movies | Advanture Movies | Fantasy Movies</p>
+
+            <h6>MOVIES NOW SHOWING IN VIZAG</h6>
+            <p class="text-secondary">Oke Oka Jeevitham | Brahmastra | Alluri | Life of Muthu</p>
+
+            <h6>UPCOMING MOVIES IN VIZAG</h6>
+            <p class="text-secondary"> paga Paga Paga | Matti pahachan | Ikshu | Bali | Peepal Tree | Semkhor | Insecure
+            </p>
+
+            <h6>MOVIES BY GENRE</h6>
+            <p class="text-secondary">Drama movies | Action Movies | Thriller Movies | Romantic Movies | Comedy Movies |
+                Crime Movies | Mestery Movies | Advanture Movies | Fantasy Movies</p>
+
+            <h6>MOVIES NOW SHOWING IN VIZAG</h6>
+            <p class="text-secondary">Oke Oka Jeevitham | Brahmastra | Alluri | Life of Muthu</p>
+
+            <h6>UPCOMING MOVIES IN VIZAG</h6>
+            <p class="text-secondary"> paga Paga Paga | Matti pahachan | Ikshu | Bali | Peepal Tree | Semkhor | Insecure
+            </p>
+
+            <h6>MOVIES BY GENRE</h6>
+            <p class="text-secondary">Drama movies | Action Movies | Thriller Movies | Romantic Movies | Comedy Movies |
+                Crime Movies | Mestery Movies | Advanture Movies | Fantasy Movies</p>
+        </div>
+
+        <div class="d-flex container">
+            <hr class="bg-light" style="width: 100%;">
+            <img src="https://logodix.com/logo/2011021.png" alt="" style="width:6rem;">
+            <hr class="bg-light" style="width: 100%;">
+        </div>
+
+        <div class="d-flex gap-3 justify-content-center text-secondary">
+            <h2>
+                <ion-icon name="logo-facebook"></ion-icon>
+            </h2>
+            <h2>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </h2>
+            <h2>
+                <ion-icon name="logo-instagram"></ion-icon>
+            </h2>
+            <h2>
+                <ion-icon name="logo-youtube"></ion-icon>
+            </h2>
+            <h2>
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </h2>
+            <h2>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </h2>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
